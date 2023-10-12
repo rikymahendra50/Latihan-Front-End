@@ -1,0 +1,181 @@
+/*Font*/
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url(../font/BebasNeue-Regular.woff) format('woff');
+}
+
+/*style*/
+
+body{
+	font: 18px/36px 'Bebas Neue';
+	background-color: #ddd;
+	background-image: url('../img/full/background.png') ;
+	background-attachment:fixed;
+}
+
+h1{
+	text-align: center;
+	font-size: 80px;
+	margin: 50px 0;
+	text-shadow: 1px 1px 2px white;
+}
+
+.container {
+	width: 600px;
+	background-color: white;
+	margin: auto;
+	padding: 30px;
+	box-shadow: 0 0 3px 3px rgba(0, 0, 0,.3);
+	border-radius: 5px;
+}
+
+.galeri li {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	/*overflow: hidden;*/
+	border: 5px solid #666;
+	float: left;
+	margin: 10px;
+	position: relative;
+}
+
+.galeri li img{
+	border-radius: 50%;
+}
+
+.galeri li span{
+	display: block;
+	width: 120px;
+	height: 120px;
+	background-color: rgba(200, 200, 200, .5);
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	text-align: center;
+	line-height: 120px;
+	color: #333;
+	text-shadow: 1px 1px 1px #ddd;
+	opacity: 0;
+	transform: scale(0) rotate(0);
+	transition: .3s;
+}
+
+.galeri li a:hover span {
+	opacity: 1;
+	transform: scale(1) rotate(360deg);
+}
+
+.clear {
+	clear: both;
+}
+
+/*overlay*/
+/*top & left harus dipisah dengan bottom & right supaya dapat melakukan tarik menarik*/
+.overlay {
+	position: fixed;
+	/*tidak mengecilkan gambar hampir tak terlihat(1)*/
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	/*aa*/
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0);
+	z-index: 99999;
+	transition: 1s;
+	text-align: center;
+	/*padding: 50px;*/
+}
+
+.overlay:target {
+	/*memunculkan gambar(1)*/
+	width: auto;
+	height: auto;
+	/**/
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0, 0, .8);
+}
+
+.overlay img{
+	max-height: 100%;
+	/*box-shadow: 2px 2px 7px rgba(0, 0, 0, .5);*/
+}
+
+/*pada saat overlay kita target img didalamnya...*/
+.overlay:target img {
+	animation: animasi 1s;
+}
+
+.overlay .close {
+	position: absolute;
+	color: red;
+	text-decoration: none;
+	background-color: black;
+	border: 1px solid white;
+	line-height: 14px;
+	padding: 7px;
+	top: 0px;
+	left: 70%;
+	opacity: 0;
+}
+
+.overlay:target .close {
+	animation: slidedown .5s .5s forwards;
+}
+
+.overlay:target .next,
+.overlay:target .prev {
+	animation: nextprev .5s .5s forwards;
+}
+
+
+.next, .prev{
+	width: 50px;
+	height: 91px;
+	background-image: url(../img/next.png);
+	position: absolute;
+	text-indent: -99999999px;
+	top: 40%;
+	opacity: 0;
+}
+
+.prev {
+	background-image: url(../img/prev.png);
+	margin-left: -40px;
+}
+
+
+/*animasi*/
+@keyframes nextprev{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes animasi{
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+	100%{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+/*animasi close*/
+@keyframes slidedown{
+	0% { 
+		opacity: 0;
+		margin-top: -20px;
+	}
+	100% {
+		opacity: 1;
+		margin-top: 5px;
+	}
+}

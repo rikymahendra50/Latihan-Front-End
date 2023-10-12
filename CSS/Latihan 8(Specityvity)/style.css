@@ -1,0 +1,8 @@
+/*jadikan lebih spesifik untuk diproritaskan*/
+ul#Anime li {
+	color: black;
+}
+
+ul#Anime li.favorit {
+	color: red;
+}

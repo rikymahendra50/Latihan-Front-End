@@ -1,0 +1,8 @@
+Vendor berfungsi untuk mencompatible kan css kita di web.
+
+-webkit- (chrome,safari,opera versi baru)
+-moz- (firefox)
+-ms- (internet Explorer)
+-o- (Opera versi lama)
+
+web untuk cek vendor = http://shouldiprefix.com/ , caniuse.com ,

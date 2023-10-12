@@ -1,0 +1,7 @@
+Font.google.com
+fontsquirell.com
+fontspring.com
+webtype.com
+typtheque.com
+
+Note : Usahakan cari font yang berformat ttf/otf ,Woff karena didukung banyak browser

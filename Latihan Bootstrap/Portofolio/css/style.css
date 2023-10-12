@@ -1,0 +1,16 @@
+hr {
+	width: 250px;
+	border-top: 4px solid #666; 
+}
+
+section {
+	min-height: 500px;
+}
+
+.portofolio {
+	background-color: #eee;
+}
+
+.padding {
+	padding-top: 30px;
+}

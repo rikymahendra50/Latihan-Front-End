@@ -1,0 +1,27 @@
+/*hover = saat ingin di klik berubah menjadi arial*/
+.hello:link{
+	color: orange;
+}
+
+.hello:hover{
+	color: green;
+	font-family: arial;
+	font-size: 20px;
+}
+
+.hello:active{
+	font-style: italic;
+}
+
+.hello:visited{
+	color: red;
+}
+
+/*first,last,nth-child(odd/even(ganjil/genap))*/
+li:nth-child(2n+1) a{
+	color: green;
+}
+
+p:last-of-type {
+	color: red;
+}

@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+
+h1{
+    font-size: 12px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td {
+    width: 60px;
+    height: 50px;
+    margin: auto;
+}
+
+.black{
+    background-color: black;
+}

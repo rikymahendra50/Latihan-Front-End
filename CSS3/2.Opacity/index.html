@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Opacity</title>
+	<style>
+		body{
+			background-image: url(backround.png);
+		}
+		.satu{
+			background-color: salmon;
+			opacity: 50%;
+			width: 300px;
+			height: 300px;
+			position: relative;
+		}
+		.dua{
+			background-color: red;
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			right: -50px;
+			bottom: -50px;
+			opacity: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="satu">
+		satu
+		<div class="dua">dua</div>
+	</div>
+</body>
+</html>

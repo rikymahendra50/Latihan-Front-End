@@ -1,0 +1,6 @@
+Float : none,left,right
+
+normal flow(box model) vs out-of flow
+
+
+

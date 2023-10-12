@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spread(size)</title>
+	<!-- inset = bayangan akan pindah ke dalam elemen -->
+	<!--  -->
+	<style>
+		div{
+			display: inline-block;
+			margin: 20px 60px 60px;
+			height: 300px;
+			width: 300px;
+		}
+		div p{
+			color: white;
+			line-height: 300px;
+			font-weight: bold;
+			text-align: center;
+		}
+		div.satu{
+			background-color: green;
+			/*box shadow= horizontal,vertikal,blur,spread,warna*/
+			box-shadow: 0px 30px 0px -10px rgba(0, 0, 0, 0.75);
+			transition: 1s;			
+		}
+		.satu:hover{ 
+			box-shadow: 0px 70px 0px -20px rgba(0, 0, 0, 1.0);
+			margin-top: 40px;
+		}
+		div.dua{
+			background-color: pink;
+			box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.75);
+		}
+		.tiga{
+			background-color: lightblue;
+			box-shadow: 5px 5px 5px rgba(255, 0, 0, .5),
+				-5px -5px 5px rgba(0, 0, 255, .5);
+		}
+		.empat{
+			background-color: lightblue;
+			box-shadow: 0 0 0 5px black,
+						0 0 0 10px green,
+						0 0 0 20px red,
+						0 0 0 25px yellow;
+			border-radius: 50%;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="satu">
+		<p>Penggunaan transition dan hover</p>
+	</div>
+	<div class="dua">
+		<p>Pengunaan Inset</p>
+	</div>
+	<div class="tiga">
+		<p>Penggunaan multiple box</p>
+	</div>
+	<div class="empat">
+		<p>Penggunaan multiple box 2</p>
+	</div>
+</body>
+</html>

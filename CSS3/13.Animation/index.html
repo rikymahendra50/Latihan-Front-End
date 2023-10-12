@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animation</title>
+	<style>
+		.kotak{
+			background-color: salmon;
+			width: 200px;
+			height: 200px;
+			animation: animasikotak 2s ease 3 alternate forwards; /*paused*/; /*bisa menggunakan hover atau tidak*/ /*alternate,reverse,3,normal*/ /*forwards,none,backwards,both*/ /*paused,running*/
+		}
+
+		@keyframes animasikotak {
+			0% {
+				width: 200px;
+			}
+			50% {
+				width: 500px;
+				height: 200px;
+			}
+			100% {
+				width: 500px;
+				height: 500px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="kotak"></div>
+</body>
+</html>

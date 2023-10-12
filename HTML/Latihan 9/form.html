@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Form</title>
+</head>
+<body>
+<table border="1" cellpadding="5" cellspacing="0" >
+<form>
+	<tr>
+		<th><label for="username">	Username : </label></th>
+		<th><input type="text" id="username"></th>
+	</tr>
+	<br>
+	<tr>
+		<th><label for="password">  Password : </label></th>
+		<th><input type="password" id="password"></th>
+	</tr>
+	<br>
+	<tr>
+		<th><label for="jk">Jenis Kelamin :</label></th>
+		<th><input type="radio" id="pria" name="jeniskelamin"> <label for="pria">Pria</label>
+		<input type="radio" id="wanita" name="jeniskelamin"> <label for="wanita">Wanita</label></th>
+	</tr>
+	<br>
+	<tr>
+		<th><label>Hobby :</label></th>
+		<th><input type="checkbox" id="Menyanyi"> <label for="Menyanyi">Menyanyi</label>
+		<input type="checkbox" id="Bermain"> <label for="Bermain">Bermain</label>
+		<input type="checkbox" id="ngoding"> <label for="ngoding">Ngoding</label></th>
+	</tr>
+	<br>
+		<tr>
+			<th><label>Pilihan :</label></th>
+			<th><select>
+				<option>Bandung</option>
+				<option>Denpasar</option>
+				<option>Surabaya</option>
+			</select></th>
+		</tr>
+
+	<tr>
+		<th><label for="textarea">Textarea :</label></th>
+		<th><textarea id="textarea"></textarea></th>
+	</tr>	
+	<br>
+	<tr>
+		<th colspan="2"><button type="submit">Kirim</button></th>
+	</tr>
+</form>
+</table>
+</body>
+</html>

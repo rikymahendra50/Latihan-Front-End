@@ -1,0 +1,19 @@
+
+
+.gambarprofile {
+	width: 25%;
+}
+
+hr{
+	width: 100px;
+	border-top: 2px solid black;
+}
+
+.Portofolio {
+	margin-top: 100px;
+}
+
+section {
+	min-height: 450px;
+}
+

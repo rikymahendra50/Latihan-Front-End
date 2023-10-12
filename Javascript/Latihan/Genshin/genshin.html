@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Genshin Damage</title>
+	<style>
+		* {
+			text-align: center;
+		}
+
+		table  { 
+			margin: 10px auto; 
+		}
+
+
+	</style>
+</head>
+<body>
+
+<h1>Hitung Damage Karakter</h1>
+<div class="tabel">
+	<table cellspacing="0" cellpadding="10" border="1">
+		<tr>
+			<td>Attack :</td>
+			<td><input type="text" name="attack"></td>
+		</tr>
+		<tr>
+			<td>damage bonus :</td>
+			<td><input type="text" name="damageBonus"></td>
+		</tr>
+		<tr>
+			<td>damage talent :</td>
+			<td><input type="text" name="damageTalent"></td>
+		</tr>
+		<tr>
+			<td>Level karakter :</td>
+			<td><input type="text" name="levelKarakter"></td>
+		</tr>
+		<tr>
+			<td>Level musuh :</td>
+			<td><input type="text" name="levelMusuh"></td>
+		</tr>
+		<tr>
+			<td>Resist musuh :</td>
+			<td><input type="text" name="resistMusuh"></td>
+		</tr>
+		<tr>
+			<td>Crit Damage % :</td>
+			<td><input type="text" name="critDamage"></td>
+		</tr>
+		<tr class="trSebelum">
+			<td colspan="2">
+				<button type="submit" name="submit">Submit</button>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+<script src="genshin.js"></script>
+</body>
+</html>

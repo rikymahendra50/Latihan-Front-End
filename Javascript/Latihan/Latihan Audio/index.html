@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=	, initial-scale=1.0">
+	<title>Audio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<button>Click me!</button>
+
+	<script>
+		const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
+		const buttons = document.querySelectorAll("button");
+
+		buttons.forEach(button => {
+		  button.addEventListener("click", () => {
+		    audio.play();
+		  });
+		});
+	</script>
+</body>
+</html>

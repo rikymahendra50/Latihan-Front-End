@@ -1,0 +1,7 @@
+/*memaksa a untuk melakukan pewarisan dari body*/
+body{
+	font-family: arial;
+	color: grey;
+}
+
+a{color: inherit; text-decoration: none;}
